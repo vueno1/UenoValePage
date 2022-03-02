@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Montserrat:ital,wght@0,100;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.logo {
+
+    img {
+        height: 20px;
+    }
+}
+
+.nav {
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0 50px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: red;
+        border-bottom: grey solid thin;
+    }
+
+    li {
+        cursor: pointer;
+    }
+}
+
+.redes_sociales {
+
+    ul {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    }
+
+   li {
+    list-style-type: none;
+    margin: 0 20px;
+   }
+   
+   a {
+    text-decoration: none;
+    color: black;
+   }
+
+   a:hover {
+       border-bottom: grey solid thin;
+       color: blue;
+   }
+}
+
+#main {
+    height: 94vh;
+    text-align: center;
+}
+
+.illustration {
+
+    display: none;
+
+    
+    li {
+        list-style-type: none;
+    }
+    
+    ul {
+        display: grid;
+        grid-template-columns: 500fr 500fr 500fr;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.about {
+    display: none;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer {
+    text-align: center;
+}
+
