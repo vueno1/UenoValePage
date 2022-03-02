@@ -8,18 +8,24 @@
 }
 
 .header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-
+    padding: 20px 20px 0 20px;
 }
 
 .logo {
 
-    img {
-        height: 20px;
-    }
+   a {
+       text-decoration: none;
+       color: black;
+   }
+
+   a:hover {
+       color: rgba(0, 0, 0, 0.63);
+   }
 }
 
 .nav {
@@ -35,17 +41,38 @@
         margin: 0 50px;
     }
 
-    a {
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: red;
+    li:hover {
+        color: rgba(0, 0, 0, 0.63);
         border-bottom: grey solid thin;
     }
 
     li {
         cursor: pointer;
+    }
+
+    .submenu_illustration {
+        display: none;
+    }
+    
+    .botonIllustration:hover {
+
+        .submenu_illustration {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+        }
+
+        .submenu2 {
+            border-bottom: none;
+            color: black;
+            margin: 0;
+            padding: 5px 0;
+        }    
+        
+        .submenu2:hover {
+            color: rgba(0, 0, 0, 0.63);
+        }
     }
 }
 
@@ -69,40 +96,59 @@
 
    a:hover {
        border-bottom: grey solid thin;
-       color: blue;
+       color: rgba(0, 0, 0, 0.63);
    }
 }
 
+
 #main {
-    height: 94vh;
+    height: 97vh;
     text-align: center;
+}
+
+.home {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+
+    img {
+        height: 700px;
+    }
 }
 
 .illustration {
 
-    display: none;
-
+    display: none;  
+    padding-top: 150px;  
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     li {
         list-style-type: none;
-    }
-    
-    ul {
-        display: grid;
-        grid-template-columns: 500fr 500fr 500fr;
-        align-items: center;
-        justify-content: center;
     }
 }
 
 .about {
     display: none;
+    padding-top: 150px;  
 
     div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+
+    img {
+        margin-top: 20px;
     }
 }
 

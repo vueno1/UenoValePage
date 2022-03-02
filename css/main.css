@@ -6,13 +6,19 @@
   font-family: 'League Spartan', sans-serif; }
 
 .header {
+  position: fixed;
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 20px 20px 0 20px; }
 
-.logo img {
-  height: 20px; }
+.logo a {
+  text-decoration: none;
+  color: black; }
+
+.logo a:hover {
+  color: rgba(0, 0, 0, 0.63); }
 
 .nav ul {
   display: flex;
@@ -23,15 +29,30 @@
   list-style-type: none;
   margin: 0 50px; }
 
-.nav a {
-  text-decoration: none; }
-
-.nav a:hover {
-  color: red;
+.nav li:hover {
+  color: rgba(0, 0, 0, 0.63);
   border-bottom: grey solid thin; }
 
 .nav li {
   cursor: pointer; }
+
+.nav .submenu_illustration {
+  display: none; }
+
+.nav .botonIllustration:hover .submenu_illustration {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px; }
+
+.nav .botonIllustration:hover .submenu2 {
+  border-bottom: none;
+  color: black;
+  margin: 0;
+  padding: 5px 0; }
+
+.nav .botonIllustration:hover .submenu2:hover {
+  color: rgba(0, 0, 0, 0.63); }
 
 .redes_sociales ul {
   display: flex;
@@ -48,29 +69,41 @@
 
 .redes_sociales a:hover {
   border-bottom: grey solid thin;
-  color: blue; }
+  color: rgba(0, 0, 0, 0.63); }
 
 #main {
-  height: 94vh;
+  height: 97vh;
   text-align: center; }
 
+.home {
+  height: 100%;
+  overflow: hidden;
+  padding-top: 20px; }
+  .home img {
+    height: 700px; }
+
 .illustration {
-  display: none; }
+  display: none;
+  padding-top: 150px; }
+  .illustration ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .illustration li {
     list-style-type: none; }
-  .illustration ul {
-    display: grid;
-    grid-template-columns: 500fr 500fr 500fr;
-    align-items: center;
-    justify-content: center; }
 
 .about {
-  display: none; }
+  display: none;
+  padding-top: 150px; }
   .about div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .about p {
+    margin: 5px 0; }
+  .about img {
+    margin-top: 20px; }
 
 .footer {
   text-align: center; }
