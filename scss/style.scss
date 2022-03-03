@@ -118,7 +118,6 @@
 
 .illustration {
 
-    display: none;  
     padding-top: 120px;  
     padding-bottom: 20px;
     
@@ -138,6 +137,7 @@
 
     img {
         height: 200px;
+        border-radius: 5px;
     }
 }
 
@@ -225,9 +225,18 @@
     }
   }
 
-.about {
+.digitales {
     display: none;
-    padding-top: 150px;  
+}
+
+.acuarelas {
+    display: none;
+    padding-top: 50px;
+    height: 100%;
+}
+
+.about {
+    display: none; 
 
     div {
         display: flex;

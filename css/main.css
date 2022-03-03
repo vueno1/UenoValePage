@@ -83,7 +83,6 @@
     height: 700px; }
 
 .illustration {
-  display: none;
   padding-top: 120px;
   padding-bottom: 20px; }
   .illustration ul {
@@ -97,7 +96,8 @@
     height: 200px;
     overflow: hidden; }
   .illustration img {
-    height: 200px; }
+    height: 200px;
+    border-radius: 5px; }
 
 .myImg {
   cursor: pointer;
@@ -184,9 +184,16 @@
   .modal-content {
     width: 100%; } }
 
-.about {
+.digitales {
+  display: none; }
+
+.acuarelas {
   display: none;
-  padding-top: 150px; }
+  padding-top: 50px;
+  height: 100%; }
+
+.about {
+  display: none; }
   .about div {
     display: flex;
     flex-direction: column;

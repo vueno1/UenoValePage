@@ -4,6 +4,8 @@ const about = document.getElementsByClassName ("about")[0]
 const footer = document.getElementsByClassName ("footer")[0]
 const main = document.getElementById("main")
 const illustration_ul = document.getElementsByClassName ("illustration_ul")[0]
+const acuarelas = document.getElementsByClassName ("acuarelas")[0]
+const digitales = document.getElementsByClassName ("digitales")[0]
 
 ///////////
 //BOTONES 
@@ -42,37 +44,20 @@ for (let i=0; i<=indice; i++) {
 
 }
 
-// let imagenes = document.querySelectorAll (".imagenes")
-// console.log (imagenes)
-
-// for (let i=0; i<=imagenes.length; i++) {
-    
-//     const img = imagenes[i]
-
-//     img.onclick = function(){
-//         modal.style.display = "block"; //aparece el modal    
-//         modalImg.src = this.src; //traigo la imagen 
-//         captionText.innerHTML = this.alt; //traigo el nombre de la imgen.
-    
-//         modalImg.style.height = "500px"
-//     }
-
-// }
-
 //X para cerrar el modal 
 span.onclick = function() { 
     modal.style.display = "none";
 }
 
-////////////
-//FUNCIONES 
-////////////
+//////////////////////////////////
+//FUNCIONES PARA BOTONES NAVEGADOR
+/////////////////////////////////
 
 const cambiarHome = () =>{
     home.style.display = "block"
-    illustration.style.display = "none"
     about.style.display = "none"
-
+    digitales.style.display = "none"
+    acuarelas.style.digitales = "none"
 }
 
 botonHome.addEventListener ("click", (e) =>{
@@ -80,8 +65,9 @@ botonHome.addEventListener ("click", (e) =>{
     cambiarHome()
 })
 
-const cambiarIllustration = () => {
-    illustration.style.display = "block"
+const cambiarDigitales = () => {
+    digitales.style.display = "block"
+    acuarelas.style.display = "none"
     home.style.display = "none"
     about.style.display  = "none"
 
@@ -90,19 +76,33 @@ const cambiarIllustration = () => {
 
 botonSubmenu2_digitales.addEventListener ("click", (e)=>{
     e.preventDefault()
-    cambiarIllustration()
+    cambiarDigitales()
 })
 
+const cambiarAcuarelas = () => {
+    home.style.display = "none"
+    about.style.display  = "none"
+    digitales.style.display = "none"
+
+    acuarelas.style.display = "block"
+
+    main.style.height = "98vh"
+}
+
+botonSubmenu2_acuarelas.addEventListener ("click", (e) =>{
+    e.preventDefault()
+    cambiarAcuarelas()
+})
 
 const cambiarAbout = () => {
     home.style.display = "none"
-    illustration.style.display = "none"
+    acuarelas.style.display = "none"
     about.style.display  = "block"
+
+    main.style.height = "98vh"
 }
 
 botonAbout.addEventListener ("click", (e) => {
     e.preventDefault()
     cambiarAbout()
 })
-
-///
