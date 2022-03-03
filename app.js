@@ -63,6 +63,7 @@ botonHome.addEventListener ("click", (e) =>{
 
 const cambiarDigitales = () => {
     digitales.style.display = "block"
+
     acuarelas.style.display = "none"
     home.style.display = "none"
     about.style.display  = "none"
@@ -93,6 +94,7 @@ botonSubmenu2_acuarelas.addEventListener ("click", (e) =>{
 const cambiarAbout = () => {
     home.style.display = "none"
     acuarelas.style.display = "none"
+    digitales.style.display = "none"
     about.style.display  = "block"
 
     main.style.height = "98vh"
