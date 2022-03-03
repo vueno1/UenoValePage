@@ -73,7 +73,8 @@
 
 #main {
   height: 97vh;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .home {
   height: 100%;

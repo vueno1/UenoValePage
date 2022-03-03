@@ -34,10 +34,6 @@ for (let i=0; i<=indice; i++) {
         modal.style.display = "block"; //aparece el modal    
         modalImg.src = this.src; //traigo la imagen 
         captionText.innerHTML = this.alt; //traigo el nombre de la imgen.
-
-        // const text = document.createElement ("p")
-        // text.textContent = "hola"
-        // captionText.appendChild (text)
     
         modalImg.style.height = "500px"
     }
